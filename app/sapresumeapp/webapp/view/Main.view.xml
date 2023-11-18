@@ -90,10 +90,19 @@
 
                 <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
                     <m:Button
+                         icon="./github.png"
+                        press="onGithubPress"
+                        width="100%"
+                    />
+                </layout:VerticalLayout>
+
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:Button
                         text="Saudi Arabia"
                         icon="sap-icon://map"
                     />
                 </layout:VerticalLayout>
+                
             </m:FlexBox>
         </headerContent>
         <sections>

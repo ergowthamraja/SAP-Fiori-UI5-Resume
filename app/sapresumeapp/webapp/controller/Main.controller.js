@@ -20,6 +20,11 @@ sap.ui.define([
                 var link = "https://www.linkedin.com/in/gowtham-raja-m-8602596a/";
                 URLHelper.redirect(link, true);
             },
+            onGithubPress: function (oEvent) {
+                var link = "https://github.com/ergowthamraja/SAP-Fiori-UI5-Resume.git";
+                URLHelper.redirect(link, true);
+            },
+            
             onResumeDownload: function (oEvent) {
                 //debugger;
                 const oA = document.createElement("a");
