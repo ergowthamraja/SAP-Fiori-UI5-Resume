@@ -1,0 +1,275 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.uxap"
+    xmlns:layout="sap.ui.layout"
+    xmlns:m="sap.m"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    controllerName="sapresumeapp.controller.Main"
+    displayBlock="true"
+>
+    <ObjectPageLayout
+        id="ObjectPageLayout"
+        showTitleInHeaderContent="true"
+        showEditHeaderButton="true"
+        editHeaderButtonPress="handleEditBtnPress"
+        upperCaseAnchorBar="false"
+    >
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <expandedHeading>
+                    <m:HBox>
+                        <m:Title
+                            text="Gowtham Raja Muthumani"
+                            wrapping="true"
+                        />
+                        <!-- <m:ObjectMarker type="Favorite" class="sapUiTinyMarginBegin"/> -->
+                    </m:HBox>
+                </expandedHeading>
+                <snappedHeading>
+                    <m:FlexBox
+                        fitContainer="true"
+                        alignItems="Center"
+                    >
+                        <m:Avatar
+                            src="./Gowthamphoto.png"
+                            class="sapUiTinyMarginEnd"
+                        />
+                        <m:Title
+                            text="Gowtham Raja Muthumani"
+                            wrapping="true"
+                        />
+                    </m:FlexBox>
+                </snappedHeading>
+                <expandedContent>
+                    <m:Text
+                        text="SAP BTP Full Stack Development - Fiori Senior Lead/Solution Architect"
+                    />
+                </expandedContent>
+                <snappedContent>
+                    <m:Text
+                        text="SAP BTP Full Stack Development - Fiori Senior Lead/Solution Architect"
+                    />
+                </snappedContent>
+                <snappedTitleOnMobile>
+                    <m:Title
+                        text="SAP BTP Full Stack Development - Fiori Senior Lead/Solution Architect"
+                    />
+                </snappedTitleOnMobile>
+                <actions>
+                    <m:OverflowToolbarButton icon="sap-icon://download" press="onResumeDownload"  type="Emphasized" tooltip="Download Word Format Resume"/>
+                </actions>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+        <headerContent>
+            <m:FlexBox wrap="Wrap">
+                <m:Avatar
+                    class="sapUiSmallMarginEnd"
+                    src="./Gowthamphoto.png"
+                    displaySize="L"
+                />
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:Button
+                        text="+966 552950742"
+                        icon="sap-icon://call"
+                    />
+                    <m:Button
+                        text="ergowthamraja@gmail.com"
+                        icon="sap-icon://email"
+                    />
+                </layout:VerticalLayout>
+                <layout:HorizontalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:Button
+                        icon="./Linkedin Logo.png"
+                        press="onLinkedInPress"
+                        width="100%"
+                    />
+                    <!-- <m:Link text="Linkedin Profile"
+				target="_blank" href="https://www.linkedin.com/in/gowtham-raja-m-8602596a/" class="sapUiSmallMarginBegin" /> -->
+                </layout:HorizontalLayout>
+
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:Button
+                        text="Saudi Arabia"
+                        icon="sap-icon://map"
+                    />
+                </layout:VerticalLayout>
+            </m:FlexBox>
+        </headerContent>
+        <sections>
+            <ObjectPageSection
+                titleUppercase="false"
+                id="goalsSection"
+                title="Profession Summary"
+            >
+                <subSections>
+                    <ObjectPageSubSection id="goalsSectionSS1">
+                        <blocks>
+                            <!-- <goals:GoalsBlock id="goalsblock"/> -->
+                            <layout:VerticalLayout
+                                class="sapUiContentPadding"
+                                width="100%"
+                            >
+                                <layout:content>
+                                    <m:Text
+                                        text="Over 14 years of experience in SAP Technology with various industries like Manufacturing, Oil and gas, Healthscience, Pharmaceutical with proven work experience in modules like SD, MM, WM, PM, SAP Industry Cloud Solutions."
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="Experienced in various phases of Project Life Cycle including Requirement gathering, Prototype Design, Development, Testing till project delivery."
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="Passionate and flexible to adapt with new technologies and frameworks."
+                                        class="bulletlist"
+                                    />
+                                </layout:content>
+                            </layout:VerticalLayout>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection
+                titleUppercase="false"
+                id="personalSection"
+                title="Certification"
+                importance="Medium"
+            >
+                <subSections>
+                    <ObjectPageSubSection id="personalSectionSS1">
+                        <blocks>
+                            <!-- <personal:BlockPhoneNumber id="phone"/>
+							<personal:BlockSocial id="social"/>
+							<personal:BlockAdresses id="adresses"/>
+							<personal:BlockMailing id="mailing" columnLayout="1"/> -->
+                            <layout:VerticalLayout
+                                class="sapUiContentPadding"
+                                width="100%"
+                            >
+                                <layout:content>
+                                    <m:Link
+                                        text="SAP Certified Development Associate - SAP Extension Suite"
+                                        target="_blank"
+                                        href="https://www.credly.com/badges/d464421d-3b27-4c67-9681-0ad131f05cf7"
+                                    />
+                                    <m:Link
+                                        text="SAP Certified Development Associate - SAP HANA Cloud 1.0"
+                                        target="_blank"
+                                        href="https://www.youracclaim.com/badges/91ce8f4d-4e99-46e0-a3cf-0e70f32f790d"
+                                    />
+                                    <m:Link
+                                        text="SAP Certified Development Associate - SAP Fiori Application Developer"
+                                        target="_blank"
+                                        href="https://www.youracclaim.com/badges/d5af52d3-c747-45a5-a596-f6aaf81d16bd"
+                                    />
+                                    <m:Link
+                                        text="SAP Certified Development Associate - ABAP with SAP Netweaver 7.0(SAP Certification ID: 0011312218)"
+                                        target="_blank"
+                                        href=""
+                                    />
+                                </layout:content>
+                            </layout:VerticalLayout>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection
+                titleUppercase="false"
+                id="personalSection1"
+                title="Education"
+                importance="Medium"
+            >
+                <subSections>
+                    <ObjectPageSubSection id="personalSectionSS10">
+                        <blocks>
+                            <!-- <personal:BlockPhoneNumber id="phone"/>
+							<personal:BlockSocial id="social"/>
+							<personal:BlockAdresses id="adresses"/>
+							<personal:BlockMailing id="mailing" columnLayout="1"/> -->
+                            <layout:VerticalLayout
+                                class="sapUiContentPadding"
+                                width="100%"
+                            >
+                                <layout:content>
+                                    <m:Text
+                                        text="Bachelor degree in Electronics and communication Engineering, Anna University"
+                                        class="bulletlist"
+                                    />
+                                </layout:content>
+                            </layout:VerticalLayout>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection
+                titleUppercase="false"
+                id="employmentSection"
+                title="Professional Experience"
+            >
+                <subSections>
+                    <ObjectPageSubSection
+                        id="employmentSectionSS3"
+                        title="Professional Experience"
+                        importance="Low"
+                        titleUppercase="false"
+                    >
+                        <blocks>
+                       
+                           <m:Table id="idExperienceTable" inset="false" 
+					items="{path : '/Experiences'}" fixedLayout="false"
+					updateFinished="onUpdateFinished">
+					
+					<m:columns>
+						<m:Column width="12em">
+							<m:Label text="Company Name" design="Bold" wrapping="true"/>
+						</m:Column>
+                        <m:Column width="12em">
+							<m:Label text="Designation" design="Bold" wrapping="true"/>
+						</m:Column>
+                        <m:Column width="12em">
+							<m:Label text="Start Date" design="Bold" wrapping="true"/>
+						</m:Column>
+                        <m:Column width="12em">
+							<m:Label text="End Date" design="Bold" wrapping="true"/>
+						</m:Column>
+						
+					</m:columns>
+					<m:items>
+						<m:ColumnListItem vAlign="Middle">
+							<m:cells>
+								<m:Text text="{companyName}" wrapping="true"/>
+                                <m:Text text="{designation}" wrapping="true"/>
+                                	<m:DatePicker
+			id="DP1"
+			value="{startDate}"  
+			
+			class="sapUiSmallMarginBottom"/>
+            <m:DatePicker
+			id="DP2"
+			value="{endDate}" 
+			
+			class="sapUiSmallMarginBottom"/>
+							</m:cells>
+						</m:ColumnListItem>
+					</m:items>
+				</m:Table>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+        </sections>
+        <footer>
+            <m:OverflowToolbar>
+                <m:ToolbarSpacer />
+                <m:Button
+                    type="Accept"
+                    text="Accept"
+                />
+                <m:Button
+                    type="Reject"
+                    text="Reject"
+                />
+            </m:OverflowToolbar>
+        </footer>
+    </ObjectPageLayout>
+</mvc:View>

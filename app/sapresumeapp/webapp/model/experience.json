@@ -1,0 +1,39 @@
+{
+	"Experiences": [
+		{
+			"companyName": "Saudi Aramco",
+			"designation": "SAP BTP Lead",
+			"startDate": "2022-09-01",
+			"endDate": ""
+		},
+		{
+			"companyName": "EY GDS",
+			"designation": "Senior Associate",
+			"startDate": "2021-06-14",
+			"endDate": "2022-07-29"
+		},
+		{
+			"companyName": "Infosys Ltd",
+			"designation": "Consultant",
+			"startDate": "2018-08-13",
+			"endDate": "2021-06-04"
+		},
+		{
+			"companyName": "HTC Global Services Ltd",
+			"designation": "SAP Lead",
+			"startDate": "2015-06-24",
+			"endDate": "2018-07-26"
+		},
+		{
+			"companyName": "Cognizant Technology Solutions",
+			"designation": "Consultant-ERP",
+			"startDate": "2014-11-10",
+			"endDate": "2015-06-23"
+		},
+		{
+			"companyName": "Hexaware Technologies Ltd",
+			"designation": "Software Engineer",
+			"startDate": "2011-09-26",
+			"endDate": "2014-10-31"
+		}	]
+}

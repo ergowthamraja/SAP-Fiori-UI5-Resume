@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="ResumeService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <EntityContainer Name="EntityContainer">
+                <EntitySet Name="IntroSet" EntityType="ResumeService.IntroSet"/>
+                <EntitySet Name="empDetailsSet" EntityType="ResumeService.empDetailsSet"/>
+            </EntityContainer>
+            <EntityType Name="IntroSet">
+                <Key>
+                    <PropertyRef Name="empName"/>
+                </Key>
+                <Property Name="empName" Type="Edm.String" MaxLength="50" Nullable="false"/>
+                <Property Name="mobile" Type="Edm.String" MaxLength="13"/>
+                <Property Name="email" Type="Edm.String" MaxLength="20"/>
+                <Property Name="designation" Type="Edm.String" MaxLength="20"/>
+                <Property Name="skills" Type="Edm.String" MaxLength="100"/>
+                <Property Name="status" Type="Edm.String" MaxLength="15"/>
+                <Property Name="location" Type="Edm.String" MaxLength="25"/>
+                <Property Name="linkedInURL" Type="Edm.String" MaxLength="200"/>
+            </EntityType>
+            <EntityType Name="empDetailsSet">
+                <Key>
+                    <PropertyRef Name="companyName"/>
+                </Key>
+                <Property Name="companyName" Type="Edm.String" MaxLength="50" Nullable="false"/>
+                <Property Name="designation" Type="Edm.String" MaxLength="25"/>
+                <Property Name="details" Type="Edm.String" MaxLength="20"/>
+            </EntityType>
+            <Annotations Target="ResumeService.IntroSet/empName">
+                <Annotation Term="Common.Label" String="Name"/>
+            </Annotations>
+            <Annotations Target="ResumeService.IntroSet/linkedInURL">
+                <Annotation Term="Common.Label" String="LinkedIn Profile"/>
+            </Annotations>
+            <Annotations Target="ResumeService.empDetailsSet/companyName">
+                <Annotation Term="Common.Label" String="Company Name"/>
+            </Annotations>
+            <Annotations Target="ResumeService.empDetailsSet/designation">
+                <Annotation Term="Common.Label" String="Designation"/>
+            </Annotations>
+            <Annotations Target="ResumeService.empDetailsSet/details">
+                <Annotation Term="Common.Label" String="Details"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
