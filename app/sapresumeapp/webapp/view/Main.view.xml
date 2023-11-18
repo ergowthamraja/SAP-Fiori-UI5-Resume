@@ -57,7 +57,12 @@
                     />
                 </snappedTitleOnMobile>
                 <actions>
-                    <m:OverflowToolbarButton icon="sap-icon://download" press="onResumeDownload"  type="Emphasized" tooltip="Download Word Format Resume"/>
+                    <m:OverflowToolbarButton
+                        icon="sap-icon://download"
+                        press="onResumeDownload"
+                        type="Emphasized"
+                        tooltip="Download Word Format Resume"
+                    />
                 </actions>
             </ObjectPageDynamicHeaderTitle>
         </headerTitle>
@@ -94,7 +99,7 @@
 
                 <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
                     <m:Button
-                         icon="./github.png"
+                        icon="./github.png"
                         press="onGithubPress"
                         width="100%"
                     />
@@ -106,7 +111,6 @@
                         icon="sap-icon://map"
                     />
                 </layout:VerticalLayout>
-                
             </m:FlexBox>
         </headerContent>
         <sections>
@@ -151,10 +155,6 @@
                 <subSections>
                     <ObjectPageSubSection id="personalSectionSS1">
                         <blocks>
-                            <!-- <personal:BlockPhoneNumber id="phone"/>
-							<personal:BlockSocial id="social"/>
-							<personal:BlockAdresses id="adresses"/>
-							<personal:BlockMailing id="mailing" columnLayout="1"/> -->
                             <layout:VerticalLayout
                                 class="sapUiContentPadding"
                                 width="100%"
@@ -195,10 +195,6 @@
                 <subSections>
                     <ObjectPageSubSection id="personalSectionSS10">
                         <blocks>
-                            <!-- <personal:BlockPhoneNumber id="phone"/>
-							<personal:BlockSocial id="social"/>
-							<personal:BlockAdresses id="adresses"/>
-							<personal:BlockMailing id="mailing" columnLayout="1"/> -->
                             <layout:VerticalLayout
                                 class="sapUiContentPadding"
                                 width="100%"
@@ -206,6 +202,89 @@
                                 <layout:content>
                                     <m:Text
                                         text="Bachelor degree in Electronics and communication Engineering, Anna University"
+                                        class="bulletlist"
+                                    />
+                                </layout:content>
+                            </layout:VerticalLayout>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection
+                titleUppercase="false"
+                id="idSkillsSection"
+                title="Skills"
+                importance="Medium"
+            >
+                <subSections>
+                    <ObjectPageSubSection id="idSkillsSection1">
+                        <blocks>
+                            <layout:VerticalLayout
+                                class="sapUiContentPadding"
+                                width="100%"
+                            >
+                                <layout:content>
+                                    <m:Text
+                                        text="•	Strategic Architecture Design"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Cross-Functional Leadership"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	End-to-End Solution Delivery"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Innovative Problem Solving"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	SAP BTP Deveopment"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Custom Application Development"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Agile Methodologies"
+                                        class="bulletlist"
+                                    />
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <layout:VerticalLayout
+                                class="sapUiContentPadding"
+                                width="100%"
+                            >
+                                <layout:content>
+                                    <m:Text
+                                        text="•	Data Modeling and Analytics"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Change Management and Adoption"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Security and Compliance"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Client Engagement and Consultation"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Training and Knowledge Transfer"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Thought Leadership"
+                                        class="bulletlist"
+                                    />
+                                    <m:Text
+                                        text="•	Continuous Learning"
                                         class="bulletlist"
                                     />
                                 </layout:content>
@@ -227,45 +306,68 @@
                         titleUppercase="false"
                     >
                         <blocks>
-                       
-                           <m:Table id="idExperienceTable" inset="false" 
-					items="{path : '/Experiences'}" fixedLayout="false"
-					updateFinished="onUpdateFinished">
-					
-					<m:columns>
-						<m:Column width="12em">
-							<m:Label text="Company Name" design="Bold" wrapping="true"/>
-						</m:Column>
-                        <m:Column width="12em">
-							<m:Label text="Designation" design="Bold" wrapping="true"/>
-						</m:Column>
-                        <m:Column width="12em">
-							<m:Label text="Start Date" design="Bold" wrapping="true"/>
-						</m:Column>
-                        <m:Column width="12em">
-							<m:Label text="End Date" design="Bold" wrapping="true"/>
-						</m:Column>
-						
-					</m:columns>
-					<m:items>
-						<m:ColumnListItem vAlign="Middle">
-							<m:cells>
-								<m:Text text="{companyName}" wrapping="true"/>
-                                <m:Text text="{designation}" wrapping="true"/>
-                                	<m:DatePicker
-			id="DP1"
-			value="{startDate}"  
-			
-			class="sapUiSmallMarginBottom"/>
-            <m:DatePicker
-			id="DP2"
-			value="{endDate}" 
-			
-			class="sapUiSmallMarginBottom"/>
-							</m:cells>
-						</m:ColumnListItem>
-					</m:items>
-				</m:Table>
+                            <m:Table
+                                id="idExperienceTable"
+                                inset="false"
+                                items="{path : '/Experiences'}"
+                                fixedLayout="false"
+                                updateFinished="onUpdateFinished"
+                            >
+                                <m:columns>
+                                    <m:Column width="12em">
+                                        <m:Label
+                                            text="Company Name"
+                                            design="Bold"
+                                            wrapping="true"
+                                        />
+                                    </m:Column>
+                                    <m:Column width="12em">
+                                        <m:Label
+                                            text="Designation"
+                                            design="Bold"
+                                            wrapping="true"
+                                        />
+                                    </m:Column>
+                                    <m:Column width="12em">
+                                        <m:Label
+                                            text="Start Date"
+                                            design="Bold"
+                                            wrapping="true"
+                                        />
+                                    </m:Column>
+                                    <m:Column width="12em">
+                                        <m:Label
+                                            text="End Date"
+                                            design="Bold"
+                                            wrapping="true"
+                                        />
+                                    </m:Column>
+                                </m:columns>
+                                <m:items>
+                                    <m:ColumnListItem vAlign="Middle">
+                                        <m:cells>
+                                            <m:Text
+                                                text="{companyName}"
+                                                wrapping="true"
+                                            />
+                                            <m:Text
+                                                text="{designation}"
+                                                wrapping="true"
+                                            />
+                                            <m:DatePicker
+                                                id="DP1"
+                                                value="{startDate}"
+                                                class="sapUiSmallMarginBottom"
+                                            />
+                                            <m:DatePicker
+                                                id="DP2"
+                                                value="{endDate}"
+                                                class="sapUiSmallMarginBottom"
+                                            />
+                                        </m:cells>
+                                    </m:ColumnListItem>
+                                </m:items>
+                            </m:Table>
                         </blocks>
                     </ObjectPageSubSection>
                 </subSections>
