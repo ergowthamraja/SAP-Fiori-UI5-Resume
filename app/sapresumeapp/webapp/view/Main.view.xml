@@ -129,17 +129,17 @@
                             >
                                 <layout:content>
                                     <m:Text
-                                        text="Over 14 years of experience in SAP Technology with various industries like Manufacturing, Oil and gas, Healthscience, Pharmaceutical with proven work experience in modules like SD, MM, WM, PM, SAP Industry Cloud Solutions."
+                                        text="As a seasoned Senior Lead and Solution Architect specializing in SAP Business Technology Platform (BTP), I excel in crafting strategic architectures that align seamlessly with organizational goals. With a proven track record in end-to-end solution delivery, my leadership spans cross-functional collaboration, innovative problem-solving, and expertise in SAP BTP integration. I specialize in developing custom applications, applying Agile methodologies for adaptability, and optimizing data flow through robust data modeling. A trusted advisor in change management, I ensure the smooth adoption of SAP BTP solutions, underpinned by a commitment to security and compliance. Recognized for client engagement, I effectively communicate SAP BTP solutions and drive knowledge transfer. Actively contributing to thought leadership and continuous learning, I stay at the forefront of SAP BTP advancements, solidifying my role as a dynamic and forward-thinking professional in the SAP BTP landscape."
                                         class="bulletlist"
                                     />
-                                    <m:Text
+                                    <!-- <m:Text
                                         text="Experienced in various phases of Project Life Cycle including Requirement gathering, Prototype Design, Development, Testing till project delivery."
                                         class="bulletlist"
                                     />
                                     <m:Text
                                         text="Passionate and flexible to adapt with new technologies and frameworks."
                                         class="bulletlist"
-                                    />
+                                    /> -->
                                 </layout:content>
                             </layout:VerticalLayout>
                         </blocks>
